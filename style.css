@@ -1,0 +1,236 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  /* Navbar */
+  header {
+    background: #3f0202;
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    height:80px;
+  }
+  .logo {
+    color: yellow;;
+  }
+  .logo {
+    font-size: 24px;
+  }
+  #logo{
+    float: left;
+  }
+  .logo i{
+    float:right;
+    padding: 5px;
+  }
+  .logo i:hover{
+    color: #007a85;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    justify-content:space-evenly;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  .nav-links li a:hover{
+    border-bottom: 1px solid white ;
+    background-image:linear-gradient(#133 #5543 #124);
+    
+    }
+ 
+  
+  .hamburger {
+    display:none;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background: url('img/bg3.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  #hero h1 {
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(64, 79, 18);
+  }
+  #hero span {
+    font-size: 90px;
+    margin-left: -220px;
+    color: rgb(64, 79, 18);
+  }
+  #hero h2 {
+    margin-bottom: -15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: rgb(64, 79, 18);
+  }
+  
+  #hero p {
+    font-size: 20px;
+    margin: 15px 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: yellowgreen;
+    color: black;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    background-color: #00adb5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+    margin-top: 200px;
+  }
+
+  
+  .btn:hover {
+    background-color: #007a85;
+    
+  }
+  
+  /* About Section */
+  #about {
+    background-color:black;
+    color: white;
+  }
+  
+  /* Skills Section */
+  .skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  
+  .skill a{
+    color: black;
+  }
+  
+  .skill {
+    background-color:white ;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: 0.1s ease-in-out;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 200px;
+    background-position:top;
+  }
+  .skill:hover{
+    color: white;
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+    background-color: #5cc0d2;
+}
+/*services*/
+#servises h1{
+  background-color: #00adb5;
+    border-radius: 20px;
+}
+  
+  @media (max-width: 768px) {
+    .skill {
+      width: 100%;
+    }
+  }
+  
+  /* Projects Section */
+  .projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .project {
+    background-color: #fff;
+    padding: 20px;
+    width: 45%;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+  }
+  
+  .project img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 8px;
+  }
+  #projects h2{
+    background-color: #00adb5;
+    border-radius: 20px;
+  }
+  #skills h1{
+    background-color: #00adb5;
+    border-radius: 20px;
+  }
+  .icon{
+    margin-top: 30px;
+  }
+  .icon i{
+    padding: 15px;
+  }
+  .icon i:hover{
+    color: red;
+  }
+  .section1{
+    background-color: yellowgreen;
+  }
+  #contact a{
+    color: black;
+  }
+  /* Footer */
+  footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  .first span{
+    font-size: 70px;
+  }
+
+
+
+
+  

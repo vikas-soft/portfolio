@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About UI & UX Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .principles, .tools {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .principle-item, .tool-item {
+            flex: 1 1 45%;
+            margin: 10px 0;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+        }
+
+        .principle-item h3, .tool-item h3 {
+            margin-top: 0;
+            color: #ff6f61;
+        }
+
+        .tools {
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .principle-item, .tool-item {
+                flex: 1 1 100%;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .btn1{
+            margin-left: 48%;
+            height: 30px;
+            width: 70px;
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            background-color: #ff6f61;
+            border-radius: 5px;
+            border-color:  #ff6f61;
+            text-decoration: none;
+            transition: background-color 0.3s;
+
+        }
+        .btn1:hover {
+            
+                background-color: #f64333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>About UI & UX Design</h1>
+    </header>
+
+    <div class="container">
+        <section class="content">
+            <h2>What is UI & UX Design?</h2>
+            <p>UI (User Interface) and UX (User Experience) design are critical aspects of creating effective, engaging, and user-friendly digital products. UI design focuses on the look and feel, the visual aesthetics of a product, while UX design is concerned with the overall experience a user has when interacting with a product, including usability and accessibility.</p>
+        </section>
+
+        <section class="principles">
+            <div class="principle-item">
+                <h3>Principle 1: Simplicity</h3>
+                <p>Good UI design is simple and intuitive, avoiding unnecessary elements and using clear language on labels and in messaging.</p>
+            </div>
+            <div class="principle-item">
+                <h3>Principle 2: Consistency</h3>
+                <p>Consistency in design ensures that users can recognize patterns and apply previous experience to new interactions.</p>
+            </div>
+            <div class="principle-item">
+                <h3>Principle 3: Feedback</h3>
+                <p>Providing feedback helps users understand what action has been taken and what the result will be, keeping them informed and engaged.</p>
+            </div>
+            <div class="principle-item">
+                <h3>Principle 4: Accessibility</h3>
+                <p>Design should be accessible to all users, including those with disabilities, ensuring that everyone can use the product effectively.</p>
+            </div>
+        </section>
+
+        <section class="tools">
+            <h2>Tools & Resources</h2>
+            <div class="tool-item">
+                <h3>Tool 1: Adobe XD</h3>
+                <p>Adobe XD is a powerful tool for designing user interfaces and creating interactive prototypes. It offers a range of features for collaborative design and rapid prototyping.</p>
+            </div>
+            <div class="tool-item">
+                <h3>Tool 2: Figma</h3>
+                <p>Figma is a web-based design tool that's ideal for collaboration. It allows multiple designers to work on a project simultaneously and provides powerful features for creating UI/UX designs.</p>
+            </div>
+            <div class="tool-item">
+                <h3>Tool 3: Sketch</h3>
+                <p>Sketch is a popular design tool for macOS, known for its intuitive interface and powerful features specifically geared towards UI/UX design.</p>
+            </div>
+            <div class="tool-item">
+                <h3>Tool 4: InVision</h3>
+                <p>InVision is a digital product design platform that allows you to create and share interactive prototypes, gather feedback, and collaborate with your team.</p>
+            </div>
+        </section>
+        <button class="btn1" onclick="document.location='/portfolio/index.html'">Back</button>
+    
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Full Stack Developer | Built with love and code</p>
+    </footer>
+
+</body>
+
+</html>

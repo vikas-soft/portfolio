@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election 2025</title>
+    <style>
+        .img{
+            height: 100px;
+            width: 100px;
+        }
+        #tab{
+            margin: auto;
+            text-align: center;
+        }
+        .btn{
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 3px;
+            box-shadow: 1px 1px;
+            
+        }
+    </style>
+    <script>
+        age=prompt("Please Enter Your Age");
+        if(age>=18){
+            alert("You Want to Vote??");
+        }
+        else{
+            alert("You can not give a vote....?");
+        }
+
+            /* const color=document.querySelector('.col');
+            color.addEventListener('click',()=>{
+                color.style.backgraund ='red';
+            }); */
+
+            let ha=0;
+            function h()
+            {
+            ha++;
+            console.log(ha);
+             }
+            let han=0;
+            function hand()
+            {
+            han=han;
+            han++;
+            console.log(han);
+            }
+             let ga=0;
+            function g()
+            {
+            ga++;
+            console.log(ga);
+            }
+            let car=0;
+            function c()
+            {
+            car++;
+            console.log(car);
+             }
+             let ka=0;
+            function k()
+             {
+            ka++;
+            console.log(ka);
+             }
+            let tree=0;
+            function t()
+            {
+            tree++;
+            console.log(tree);
+             }
+        
+            function result()
+            {
+            document.getElementById('rs1').innerHTML=ha;
+            document.getElementById('rs2').innerHTML=han;
+            document.getElementById('rs3').innerHTML=ga;
+            document.getElementById('rs4').innerHTML=car;
+            document.getElementById('rs5').innerHTML=ka;
+            document.getElementById('rs6').innerHTML=tree;
+        
+           }
+    </script>
+</head>
+<body>
+    <table border="2px 2px 2px 2px solid black" id="tab">
+        <th>Chunav Chinh</th>
+        <th>Button</th>
+        <th>Result</th>
+        <th><button onclick="result()">Check Result</button></th>
+        <tr>
+            <td><img class="img" src="/portfolio/Election/img/kamal.png"></td>
+            <td>
+                <button class="btn" onclick="h()" class="col">click Here</button>
+            </td>
+            <td id="rs1"></td>
+        </tr>
+        <tr>
+            <td><img class="img" src="/portfolio/Election/img/lalten.png"></td>
+            <td><button class="btn" onclick="hand()">click Here</button>
+            </td>
+            <td id="rs2"></td>
+        </tr>
+        <tr>
+            <td><img class="img" src="/portfolio/Election/img/download 1.png"></td>
+            <td><button class="btn" onclick="g()">click Here</button>
+            </td>
+            <td  id="rs3"></td>
+        </tr>
+        <tr>
+            <td><img class="img" src="/portfolio/Election/img/download 2.png"></td>
+            <td><button class="btn" onclick="c()">click Here</button>
+            </td>
+            <td  id="rs4"></td>
+        </tr>
+        <tr>
+            <td><img class="img" src="/portfolio/Election/img/download 3.png"></td>
+            <td><button class="btn" onclick="k()">click Here</button>
+            </td>
+            <td  id="rs5"></td>
+        </tr>
+        <tr>
+            <td style="height: 100px;">NOTA</td>
+            <td><button class="btn" class="btn" onclick="t()">click Here</button>
+            </td>
+            <td  id="rs6"></td>
+        </tr>
+    </table>
+</body>
+</html>

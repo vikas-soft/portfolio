@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .features, .resources {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .feature-item, .resource-item {
+            flex: 1 1 45%;
+            margin: 10px 0;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+        }
+
+        .feature-item h3, .resource-item h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+
+        .resources {
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .feature-item, .resource-item {
+                flex: 1 1 100%;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .btn1{
+            margin-left: 48%;
+            height: 30px;
+            width: 70px;
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            background-color:  #007bff;
+            border-radius: 5px;
+            border-color:  #007bff;
+            text-decoration: none;
+            transition: background-color 0.3s;
+
+        }
+        .btn1:hover {
+            
+                background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>About HTML</h1>
+    </header>
+
+    <div class="container">
+        <section class="content">
+            <h2>What is HTML?</h2>
+            <p>HTML (Hypertext Markup Language) is the standard language used to create and design documents on the web. It forms the backbone of all websites and web applications, structuring content with elements such as headings, paragraphs, links, images, and more. HTML is essential for web development and works in conjunction with CSS (Cascading Style Sheets) and JavaScript to create fully functional web pages.</p>
+        </section>
+
+        <section class="features">
+            <div class="feature-item">
+                <h3>Feature 1: Structure</h3>
+                <p>HTML provides a logical structure for content, using elements like headers, paragraphs, lists, and tables to organize and present information.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Feature 2: Multimedia Support</h3>
+                <p>HTML supports the embedding of multimedia elements such as images, videos, and audio files, making it a versatile tool for creating rich content.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Feature 3: Hyperlinks</h3>
+                <p>HTML allows the creation of hyperlinks, which enable users to navigate between different web pages and resources seamlessly.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Feature 4: Forms</h3>
+                <p>HTML provides elements for creating forms, allowing users to input data, which can then be processed by web applications.</p>
+            </div>
+        </section>
+
+        <section class="resources">
+            <h2>Learning Resources</h2>
+            <div class="resource-item">
+                <h3>Resource 1: W3Schools</h3>
+                <p><a href="https://www.w3schools.com/html/" target="_blank">W3Schools</a> offers comprehensive tutorials and examples for learning HTML from the ground up.</p>
+            </div>
+            <div class="resource-item">
+                <h3>Resource 2: MDN Web Docs</h3>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs</a> by Mozilla provides detailed documentation and guides for HTML, including best practices and advanced techniques.</p>
+            </div>
+            <div class="resource-item">
+                <h3>Resource 3: Codecademy</h3>
+                <p><a href="https://www.codecademy.com/learn/learn-html" target="_blank">Codecademy</a> offers interactive HTML courses that allow you to practice coding directly in your browser.</p>
+            </div>
+            <div class="resource-item">
+                <h3>Resource 4: freeCodeCamp</h3>
+                <p><a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank">freeCodeCamp</a> provides a free, self-paced course that covers HTML and responsive web design principles.</p>
+            </div>
+            <button class="btn1" onclick="document.location='/portfolio/index.html'">Back</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Full Stack Developer | Built with love and code</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back-End Development & Responsive Web Design</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background: #444;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .content {
+            margin: 20px 0;
+        }
+
+        .content h2 {
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .content ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .box {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+        }
+
+        /* Responsive images */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Back-End Development & Responsive Web Design</h1>
+</header>
+
+<div class="content">
+    <section class="grid">
+        <div class="box">
+            <h2>What is Back-End Development?</h2>
+            <p>Back-end development focuses on the server side of web applications. It involves working with databases, server-side logic, APIs, and server architecture. The back end is responsible for storing, processing, and managing data sent from the front end to ensure the proper functionality of an application.</p>
+            <ul>
+                <li>Server-side languages like Node.js, Python, Ruby, PHP</li>
+                <li>Databases: SQL, MongoDB, PostgreSQL</li>
+                <li>APIs and Server management</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Responsive Web Design in Back-End Development</h2>
+            <p>While back-end development handles the server logic, it plays a role in ensuring that content is delivered efficiently to various devices in responsive designs. This includes:</p>
+            <ul>
+                <li>Dynamic content rendering for different devices</li>
+                <li>Optimization of database queries to serve responsive elements</li>
+                <li>Supporting APIs for front-end frameworks like React or Vue.js to ensure smooth performance</li>
+            </ul>
+        </div>
+    </section>
+    
+</div>
+
+<footer>
+    <p>&copy; 2024 Full Stack Developer | Built with love and code</p>
+</footer>
+
+</body>
+</html>

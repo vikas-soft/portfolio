@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Development & Responsive Design</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .content h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .content ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .box {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+        }
+
+        /* Responsive images */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Front-End Development & Responsive Design</h1>
+</header>
+
+<div class="content">
+    <section class="grid">
+        <div class="box">
+            <h2>What is Front-End Development?</h2>
+            <p>Front-end development refers to the practice of producing HTML, CSS, and JavaScript for a website or web application so that a user can interact with it directly. It focuses on the look, feel, and overall design of a site.</p>
+            <ul>
+                <li>HTML for structure</li>
+                <li>CSS for styling</li>
+                <li>JavaScript for interactivity</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Responsive Web Design</h2>
+            <p>Responsive web design ensures that a website looks good on all devices (desktops, tablets, and phones). It allows web pages to automatically adjust based on the device’s screen size.</p>
+            <h3>Key Techniques:</h3>
+            <ul>
+                <li>Using media queries</li>
+                <li>Flexible grid layouts</li>
+                <li>Responsive images</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Full Stack Developer | Built with love and code</p>
+</footer>
+
+</body>
+</html>

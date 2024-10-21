@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you!</p>
+        </header>
+
+        <div class="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST" name="myform" onsubmit="return vailidation()">
+                <input type="hidden" name="access_key" value="962d28d3-8ada-4791-b0e0-c02231249d11">
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="username" required onkeyup="alphabets(this)">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" required onkeyup="onlynumber(this)" maxlength="10">
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <button class="btn1" onclick="document.location='/portfolio/index.html'">Back</button>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Full Stack Developer | Built with love and code</p>
+        </footer>
+    </div>
+    <script>
+        var username=document.forms['myform']['username']
+        var phone=document.forms['myform']['phone'];
+        var latter=/^[a-z A-Z]*$/;
+        function onlynumber(input){
+            var num=/[^0-9 ]/gi;
+            input.value=input.value.replace(num,"")
+        }
+        function alphabets(input){
+            var latter=/^[0-9]*$/
+            input.value=input.value.replace(latter,"")
+        }
+function vailidation(){
+     if(phone.value.length>12)
+    {
+        alert("Phone Number Size lessthan='12'");
+        return false;
+    }
+    else if(!username.value.match(latter))
+    {
+        alert("Full Name Must Contain Only Aphabets ");
+        return false;
+    }
+    return true;
+    
+}
+    </script>
+</body>
+</html>

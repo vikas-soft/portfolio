@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Android Studio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #3ddc84;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .feature-item {
+            flex: 1 1 45%;
+            margin: 10px 0;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+        }
+
+        .feature-item h3 {
+            margin-top: 0;
+        }
+
+        .download-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-section a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            color: white;
+            background-color: #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .download-section a:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .feature-item {
+                flex: 1 1 100%;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .btn1{
+            margin-left: 48%;
+            height: 30px;
+            width: 70px;
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            background-color:  #007bff;
+            border-radius: 5px;
+            border-color:  #007bff;
+            text-decoration: none;
+            transition: background-color 0.3s;
+
+        }
+        .btn1:hover {
+            
+                background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>About Android Studio</h1>
+    </header>
+
+    <div class="container">
+        <section class="content">
+            <h2>What is Android Studio?</h2>
+            <p>Android Studio is the official integrated development environment (IDE) for Google's Android operating system. Built on JetBrains' IntelliJ IDEA software, Android Studio is designed specifically for Android development, offering tools and features that enhance productivity and ease of use.</p>
+        </section>
+
+        <section class="features">
+            <div class="feature-item">
+                <h3>Feature 1: Code Editor</h3>
+                <p>The powerful code editor in Android Studio helps you write better code, work faster, and be more productive. It provides code completion, refactoring, and real-time code analysis.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Feature 2: Layout Editor</h3>
+                <p>The Layout Editor lets you quickly build and preview layouts in different screen sizes and resolutions, ensuring your app looks great on any device.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Feature 3: Emulator</h3>
+                <p>Test your apps on a wide range of virtual devices with Android Studio's fast and feature-rich emulator. It supports different API levels, device types, and screen sizes.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Feature 4: Instant Run</h3>
+                <p>Instant Run dramatically speeds up your edit, build, and run cycles by deploying code changes directly to your running app without restarting the application.</p>
+            </div>
+        </section>
+
+        <div class="download-section">
+            <h2>Download Android Studio</h2>
+            <a href="https://developer.android.com/studio" target="_blank">Download for Windows</a>
+            <a href="https://developer.android.com/studio" target="_blank">Download for Mac</a>
+            <a href="https://developer.android.com/studio" target="_blank">Download for Linux</a>
+        </div>
+        <button class="btn1" onclick="document.location='/portfolio/index.html'">Back</button>
+    </div>
+
+    <footer>
+        <p> &copy; 2024 Full Stack Developer | Built with love and code</p>
+    </footer>
+
+</body>
+
+</html>
