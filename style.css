@@ -172,7 +172,18 @@
   @media (max-width: 768px) {
     .skill {
       width: 100%;
+      height: max-content;
     }
+    #hero  span {
+      margin-left: 10px;
+    }
+     nav li{
+      color: green;
+    }
+    .nav-links li {
+      margin-left: 0px;
+    }
+    
   }
   
   /* Projects Section */
