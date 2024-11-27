@@ -19,19 +19,12 @@
             border: 1px solid black;
             border-radius: 3px;
             box-shadow: 1px 1px;
-            
+        }
+        #box{
+            display:none;
         }
     </style>
     <script>
-        age=prompt("Please Enter Your Age");
-        if(age>=18){
-            alert("You Want to Vote??");
-        }
-        else{
-            alert("You can not give a vote....?");
-        }
-
-
             let ha=0;
             function h()
             {
@@ -83,6 +76,7 @@
     </script>
 </head>
 <body>
+    <div class="box">
     <table border="2px 2px 2px 2px solid black" id="tab">
         <th>Chunav Chinh</th>
         <th>Button</th>
@@ -126,5 +120,14 @@
             <td  id="rs6"></td>
         </tr>
     </table>
+     </div>   
+<script>
+    const age = prompt("Please Enter Your Age");
+    if(age>=18){
+    document.getElementById('box').style.display ="block";
+    }else{
+        alert("You can not give a vote...?");
+    }
+ </script>
 </body>
 </html>
